@@ -119,7 +119,7 @@ export default function CreateActivity() {
 
   useEffect(() => {
     dispatch(getCountries());
-  }, []);
+  }, [dispatch]);
 
   return ( 
   <div className="button__create">

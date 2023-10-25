@@ -64,7 +64,7 @@ const Home = () => {
 
   useEffect(() => {
     dispatch(getCountries());
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     if (!searchString) {
