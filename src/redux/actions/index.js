@@ -7,7 +7,7 @@ export const GET_ACTIVITIES = "GET_ACTIVITIES"
 
 export function getCountries(){
     return async function(dispatch){
-        const response = await axios("http://localhost:3001/countries")   //revisar
+        const response = await axios("/countries")   //revisar
     
         return dispatch({
             type:"GET_COUNTRIES",     //tipo de accion
@@ -18,7 +18,7 @@ export function getCountries(){
 
 export function getByName(name){
     return async function(dispatch){
-        const response = await axios(`http://localhost:3001/countries/?name=${name}`);   //revisar
+        const response = await axios(`/countries/?name=${name}`);   //revisar
     
         return dispatch({
             type:"GET_BY_NAME",     //tipo de accion
@@ -30,7 +30,7 @@ export function getByName(name){
 export function getById(id){
     return async function(dispatch){
         try{
-            const response = await axios(`http://localhost:3001/countries/${id}`);   //revisar
+            const response = await axios(`/countries/${id}`);   //revisar
     
         return dispatch({
             type:"GET_BY_ID",     //tipo de accion
@@ -48,7 +48,7 @@ export function postActivities(payload) {
       try {
         console.log("Payload:", payload);
 
-        const response = await axios.post("http://localhost:3001/activity", payload);
+        const response = await axios.post("/activity", payload);
         console.log(response);
         return response;
       } catch (error) {
@@ -62,7 +62,7 @@ export function postActivities(payload) {
   export function getActivitiesInCountries() {
     return async function (dispatch) {
       try {
-        const response = await axios.get("http://localhost:3001/activity");
+        const response = await axios.get("/activity");
   
         const activities = response.data.map((activity) => ({
           // sanitize and validate the response data
