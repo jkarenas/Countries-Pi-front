@@ -1,5 +1,5 @@
 import {Route, Routes ,BrowserRouter,} from "react-router-dom"
-import Home from "./views/home/home"
+// import Home from "./views/home/home"
 import Detail from "./views/detail/detail"
 import Create from "./views/create/create"
 
@@ -9,7 +9,7 @@ import Gallery from "./views/gallery/gallery"
 import LandingPage from "./views/landingPage/landingPage"
 import NotFound from "./views/notFound/notFound"
 import NavBar from "../src/components/NavBar/NavBar"
-import MainHeader from "./components/NavBar/MainHeader"
+// import MainHeader from "./components/NavBar/MainHeader"
 
 
 
