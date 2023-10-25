@@ -1,0 +1,37 @@
+/* pagination.css */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  gap:1rem
+}
+
+.prev-next-button,
+.pagination-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--color-primary);
+  color: var(--color-gray-100);
+  cursor: pointer;
+  transition: var(--transition);
+  border-radius: 0.5rem;
+}
+
+
+.pagination-button.active {
+  background-color: var(--color-secondary);
+  cursor: not-allowed;
+}
+
+.prev-next-button:hover,
+.pagination-button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-gray-600);
+}
+
+.pagination-button + .pagination-button {
+  margin-left: 0.5rem;
+}

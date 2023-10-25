@@ -1,0 +1,102 @@
+/* CreateActivity.css */
+
+/* Estilos para el formulario de creación de actividad */
+.button__create {
+    margin-top: 8rem;
+}
+.create__counter {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+
+}
+form {
+    width:70%;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  label {
+    color: var(--color-gray-100);
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid var(--color-gray-300);
+    border-radius: 0.5rem;
+    background-color: var(--color-gray-500);
+    color: var(--color-gray-100);
+  }
+  
+  select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,<svg%20xmlns='http://www.w3.org/2000/svg'%20width='12'%20height='12'%20viewBox='0%200%2012%2012'><path%20fill='%23fff'%20d='M3.714%204.823a1%201%200%2001%200-1.443l2.93-2.93a1%201%200%200111.442%201.442L4.88%204.823l2.206%202.206a1%201%200%20011.442%201.442l-2.93%202.93a1%201%200%2001-1.443-1.442L3.714%206.269z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 12px;
+  }
+  
+  select:focus {
+    border-color: var(--color-primary);
+  }
+  
+  button[type="submit"] {
+    align-self: flex-start;
+    background: var(--color-primary);
+    color: var(--color-gray-600);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  button[type="submit"]:hover {
+    background: var(--color-secondary);
+    color: var(--color-gray-100);
+  }
+  
+  p.error {
+    color: red;
+    margin-top: 0.3rem;
+  }
+  
+  /* Estilos para la lista de países seleccionados */
+  .selected-countries {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+  
+  .selected-country {
+    background-color: var(--color-gray-500);
+    color: var(--color-gray-100);
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.3rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .delete-button {
+    background-color: var(--color-gray-400);
+    color: var(--color-gray-100);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 0.8rem;
+  }
+  

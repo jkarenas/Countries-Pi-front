@@ -1,0 +1,51 @@
+/* searchBar.css */
+
+/* Estilos para el contenedor del componente SearchBar */
+.search-box {
+  
+    margin-top: 2.5rem;
+    margin: auto;
+  }
+  
+  /* Estilos para el formulario */
+  .search-box form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  /* Estilos para el input de búsqueda */
+  .search-box input[type="search"] {
+    padding: 0.5rem;
+    border: 1px solid var(--color-gray-400);
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    background-color: var(--color-gray-100);
+    color: var(--color-gray-600);
+    transition: var(--transition);
+  }
+  
+  /* Estilos para el input de búsqueda cuando está en foco */
+  .search-box input[type="search"]:focus {
+    border-color: var(--color-primary);
+    background-color: var(--color-gray-200);
+  }
+  
+  /* Estilos para el botón de búsqueda */
+  .search-box button[type="submit"] {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-gray-100);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+    align-self: auto;
+  }
+  
+  /* Estilos para el botón de búsqueda al pasar el mouse sobre él */
+  .search-box button[type="submit"]:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-gray-600);
+  }
