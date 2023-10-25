@@ -112,10 +112,10 @@ export default function CreateActivity() {
     });
   }
 
-  function handleClick(e) {
-    e.preventDefault();
-    navigate("/home");
-  }
+  // function handleClick(e) {
+  //   e.preventDefault();
+  //   navigate("/home");
+  // }
 
   useEffect(() => {
     dispatch(getCountries());

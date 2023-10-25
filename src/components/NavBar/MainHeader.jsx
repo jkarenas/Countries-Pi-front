@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import Home from "../../views/home/home"
+// import Home from "../../views/home/home"
 import familiaTurista from '../../images/familiaTurista.png'
 
 const MainHeader = () => {
@@ -18,7 +18,7 @@ const MainHeader = () => {
         <div className="main__header-right">
           <div className="main__header-circle"></div>
           <div className="main__header-image">
-            <img src={familiaTurista} alt='Main Header Image'/>
+            <img src={familiaTurista} alt='family'/>
           </div>
         </div>
         {/* <Home/> */}

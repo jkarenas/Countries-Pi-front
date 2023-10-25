@@ -15,7 +15,7 @@ const Pagination = ({ countriesPerPage, totalCountries, paginate }) => {
 
   const renderPageNumbers = () => {
     const pageNumbersToRender = [];
-    const maxDisplayedPages = 3;
+    // const maxDisplayedPages = 3;
 
     for (let i = currentPage - 1; i <= currentPage + 1; i++) {
       if (i >= 1 && i <= totalPages) {
